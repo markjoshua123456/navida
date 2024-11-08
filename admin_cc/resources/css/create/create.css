@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    margin-top: 35px;
+    margin-left: 170px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* General input styles */
+
+input, textarea, select {
+    width: 590px; /* Full width for all input types */
+    padding: 10px; /* Increase padding for comfort */
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Border for all inputs */
+    border-radius: 5px; /* Rounded corners for all inputs */
+    font-size: 16px; /* Consistent font size */
+    resize: none;  /* Disable resizing */
+}
+
+
+/* Specific styles for the category dropdown */
+.category-dropdown {
+    width: 300px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    -webkit-appearance: none; /* Remove default styles in WebKit browsers */
+    -moz-appearance: none; /* Remove default styles in Firefox */
+    appearance: none; /* Remove default styles */
+    background: #fff; /* Set background color */
+}
+/* Button styles */
+.button-wrapper {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align items to the right */
+    margin-top: 20px; /* Add spacing above the buttons */
+}
+button {
+    width: 130px;
+    height: 40px;
+    margin-left: 20px; /* Add spacing between buttons */
+    padding: 10px 15px;
+    background-color: #FFAE35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #e09b2d;
+}
+/* Notification styles */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.success {
+    background-color: #d4edda;
+    color: #FFAE35;
+}
+/* Action button styles */
+.action-button {
+    border-radius: 10px;
+    display: block;
+    margin: 20px 210px;
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin-top: 100px;
+    margin-left: -195px;
+}
+
+.add-category-button {
+    background-color: white;
+    color: black;
+    border: 2px solid #ccc;
+    margin-left: -240px;  
+}
+.add-category-button:hover {
+    background-color: #f0f0f0;
+}
+.add-new-item-button {
+    background-color: #FFAE35;
+    color: white;
+    border: none;
+}
+.add-new-item-button:hover {
+    background-color: #e09b2d;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 590px;
+    
+    border-radius: 15px;
+}
+.close {
+    width: 70px;
+    height: 40px;
+    padding: 10px 15px;
+    background-color: #858383; /* Match the background color */
+    color: white; /* Match the text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.close:hover {
+    background-color: #e09b2d; /* Match the hover effect */
+}
+
+/* Category container styles */
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    margin-left: -525px;
+    margin-top: 160px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Success message modal */
+.success-modal {
+    color: #FFAE35;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #FFAE35;
+    background-color: #e6ffed;
+    border-radius: 5px;
+}
+
+/* Category button styles */
+.category-button {
+    display: inline-block; /* Change to inline-block for proper spacing */
+    width: 80px; /* Fixed width for the button */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 15px; /* Font size */
+    font-weight: bold;
+    color: black; /* Text color to match the border */
+    text-align: center; /* Center text inside the link */
+    line-height: 30px; /* Vertically center the text */
+    text-decoration: none; /* Remove underline */
+}
+.category-button:hover {
+    background-color: rgba(255, 174, 53, 0.2); /* Light background on hover */
+}
+/* Upload logo styles */
+.upload-logo {
+    display: inline-block;
+    border: 2px dashed #888;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.upload-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form row styles */
+.form-row {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically center */
+    gap: 50px; /* Add space between elements */
+}
